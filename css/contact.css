@@ -1,0 +1,67 @@
+:root {
+    --lightcolor: #ffd27d;
+    --color: #FFB52A;
+    --mysql: #00427e;
+    --php: #777bb3;
+    --js: #f8981d;
+    --ci: #5bc2f0;
+}
+
+.contact-header {
+    height: 70%;
+}
+
+.contact-footer {
+    padding: 10px;
+    height: calc(30% - 20px);
+    background-color: #FFB52A50;
+    display: flex;
+}
+
+.contact-footer .contact,
+.contact-footer .faq,
+.contact-footer .newsletter {
+    width: 33.33%;
+    height: calc(100% - 20px);
+    color: #ffffff;
+    padding: 10px;
+}
+
+.contact-footer div p:first-child {
+    font-size: 30px;
+}
+
+.contact-footer div:nth-child(2) {
+    border-left:  2px solid #FFB52A;
+    border-right:  2px solid #FFB52A;
+}
+
+input[type="text"] {
+    display: block;
+    margin: 10px;
+    margin-left: 0px;
+    padding: 10px;
+    border: none;
+    border-bottom: 2px solid var(--color);
+    border-radius: 10px 10px 5px 5px;
+    background-color: #ffffff10;
+    font-size: 18px;
+    color: #ffffff;
+}
+
+input[type="text"]:focus {
+    outline: none;
+}
+
+.btn {
+    background-color: var(--color);
+    outline: none;
+    border: none;
+    padding: 10px;
+    border-radius: 5px;
+    color: #ffffff;
+}
+
+.btn:hover {
+    cursor: pointer;
+}

@@ -1,0 +1,279 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
+    <link rel="stylesheet" href="css/index.css">
+    <link rel="stylesheet" href="css/contact.css">
+    <link rel="stylesheet" href="css/self.css">
+    <link rel="stylesheet" href="css/experience.css">
+    <link rel="stylesheet" href="css/modal.css">
+    <title>Pogar Eduard</title>
+    <link rel="icon" href="./images/white-logo.png" type="image/x-icon">
+</head>
+<body>
+    <div class="modal-container left">
+        <div class="modal">
+            <div class="modal-header">
+                <p class="modal-title">Why Chose Me?</p>
+
+                <button class="btn modal-btn" onclick="closeModal()">X</button>
+            </div>
+
+            <div class="modat-body">
+                <p><strong>Expertise:</strong> With years of experience in the field, I bring a wealth of technical knowledge and creative flair to every project.</p>
+                <p><strong>Custom Solutions:</strong> Your vision is unique, and so are the websites I create. Tailored to your specific needs, I deliver bespoke solutions that resonate with your brand identity.</p>
+                <p><strong>Cutting-edge Technology:</strong> Staying ahead of the curve, I leverage the latest web technologies to ensure your website is not only modern but also efficient and secure.</p>
+                <p><strong>Collaborative Approach:</strong> Communication is key. I work closely with you every step of the way, ensuring your ideas are seamlessly integrated into the final product.</p>
+                <p><strong>Responsive Design:</strong> In today's mobile-driven world, your website needs to look and perform flawlessly on all devices. I specialize in creating responsive designs that adapt to any screen size.</p>
+            </div>
+
+            <div class="modal-footer">
+
+            </div>
+        </div>
+    </div>
+
+    <div class="modal-container right">
+        <div class="modal">
+            <div class="modal-header">
+                <p class="modal-title">Services Offered:</p>
+
+                <button class="btn modal-btn" onclick="closeModal()">X</button>
+            </div>
+
+            <div class="modat-body">
+                <p><strong>Web Development:</strong> From single-page portfolios to robust e-commerce platforms, I build websites that cater to your specific goals.</p>
+                <p><strong>UI/UX Design:</strong> User experience is paramount. I create intuitive interfaces that engage visitors and guide them through your content effortlessly.</p>
+                <p><strong>Front-end and Back-end Development:</strong> I handle the technical complexities, ensuring your website not only looks stunning but also functions seamlessly.</p>
+                <p><strong>E-commerce Solutions:</strong> Ready to take your products online? I create secure and user-friendly online stores that drive conversions.</p>
+                <p><strong>Maintenance and Support:</strong> Launching your website is just the beginning. I offer ongoing maintenance and support to keep your digital presence in top shape.</p>
+            </div>
+
+            <div class="modal-footer">
+
+            </div>
+        </div>
+    </div>
+
+    <!-- Navbar -->
+    <div class="navbar">
+        <div class="navbar-contact-details active-ncd">
+            <div><img src="./images/phone.png">+40741923379</div>
+            <div><img src="./images/email.png">pogareduard@yahoo.com</div>
+            <div><img src="./images/calendar.png">L - D: 10:00 - 22:00</div>
+        </div>
+        <div class="navbar-items">
+            <a onclick="showContact()">
+                <div class="navbar-item profile-image">
+                    <img src="./images/profile-img2.jpg" alt="">
+                    <div class="name-position">
+                        <p>Pogar Eduard</p>
+                        <p>Full Stack Developer</p>
+                    </div>
+                </div>
+            </a>
+    
+            <div class="navbar-item"><a onclick="navbarBtnActive(this, 'self')" link="#self">Presentation<div class="bottom-ancor-line active-decoration"></div></a></div>
+            <div class="navbar-item"><a onclick="navbarBtnActive(this, 'skills')" link="#skills">Skills<div class="bottom-ancor-line"></div></a></div>
+            <div class="navbar-item"><a onclick="navbarBtnActive(this, 'experience')" link="#experience">Experience<div class="bottom-ancor-line"></div></a></div>
+            <div class="navbar-item" style="margin-right: auto"><a onclick="navbarBtnActive(this, 'contact')" link="#contact">Contact<div class="bottom-ancor-line"></div></a></div>
+
+            <div class="navbar-item social"><a href="https://www.linkedin.com/in/eduard-pogar-9387a2244/" target="_blank">LinkedIn</a></div>
+            <div class="navbar-item social"><a href="https://github.com/PogarEduard?tab=repositories" target="_blank">GitHub</a></div>
+    
+            <a onclick="toggleLeftDrawer()" class="drawer-button-ancor">
+                <div class="drawer-button">
+                    <div></div>
+                    <div></div>
+                    <div></div>
+                </div>
+            </a>
+        </div>
+    </div>
+    <!-- End of Navbar -->
+
+    <div class="left-drawer">
+        <div class="drawer-close-button">
+            <a onclick="toggleLeftDrawer()" class="drawer-button-ancor inside-drawer">
+                <div class="drawer-button">
+                    <div></div>
+                    <div></div>
+                    <div></div>
+                </div>
+            </a>
+        </div>
+    </div>
+    
+
+    <div class="container">
+        <div class="box" style="background: linear-gradient(to top right, #6a85aa, #21446c);" id="self">
+            <div style="padding-top: 200px;"></div>
+                <p class="web-title">Elevate Your Online Presence</p>
+                <p class="web-title-description">As a seasoned web development freelancer, I am dedicated to transforming your digital ideas into captivating and user-centric websites. I specialize in crafting responsive and dynamic online solutions that not only meet your business goals but also leave a lasting impression on your audience.</p>
+
+            <div class="self-buttons">
+                <div class="self-panel">
+                    <button class="self-button" onclick="openModal('left')">Why Choose Me</button>
+                </div>
+    
+                <div class="self-panel">
+                    <button class="self-button" onclick="openModal('right')">Services Offered</button>
+                </div>
+            </div>
+        </div>
+
+        <div class="box" style="background: linear-gradient(to bottom right, #6a85aa, #21446c);" id="skills">
+            <div class="skils-pipes">
+                <div class="language-container">
+                    <div class="skils-pipe pipe-php">
+                        <div class="programing-language">PHP 80%</div>
+                    </div>
+
+                    <div class="language-description">
+                        <div>OOP</div>
+                        <div>BACKEND</div>
+                        <div>API</div>
+                    </div>
+
+                    <div class="language-short-frase">
+                        PHP is an powerfull tool used in the backend for web development.
+                    </div>
+                </div>
+
+                <div class="language-container">
+                    <div class="skils-pipe pipe-mysql">
+                        <div class="programing-language">SQL / MySQL 70%</div>
+                    </div>
+
+                    <div class="language-description">
+                        <div>SQL</div>
+                        <div>BACKEND</div>
+                        <div>MySQL</div>
+                    </div>
+
+                    <div class="language-short-frase">
+                        SQL is used to store and retreive data from the database.
+                    </div>
+                </div>
+                
+                <div class="language-container">
+                    <div class="skils-pipe pipe-ci">
+                        <div class="programing-language">HTML / CSS 80%</div>
+                    </div>
+
+                    <div class="language-description">
+                        <div>STYLE</div>
+                        <div>FRONTEND</div>
+                        <div>DESIGN</div>
+                    </div>
+
+                    <div class="language-short-frase">
+                        HTML and CSS are used to style and give an beautifule design to the website.
+                    </div>
+                </div>
+                
+                <div class="language-container">
+                    <div class="skils-pipe pipe-js">
+                        <div class="programing-language">JavaScript 70%</div>
+                    </div>
+                
+                    <div class="language-description">
+                        <div>ANIMATIONS</div>
+                        <div>FRONTEND</div>
+                        <div>API CALS</div>
+                    </div>
+
+                    <div class="language-short-frase">
+                        Javascript is mainly used for animations and helps the website to be responsive.
+                    </div>
+                </div>
+            </div>
+
+            <!-- start of animated cards -->
+            <div class="animated-items">
+                <div class="skils-card">
+                    <div class="skils-card-header">
+                        <p>PHP</p>
+                        <p>1 Year of experience</p>
+                    </div>
+
+                    <div class="skils-card-body">
+                        <p>Main Language used in the backend</p>
+
+                        <div></div>
+                    </div>
+                </div>
+
+                <div class="skils-card">
+                    <div class="skils-card-header">
+                        <p>SQL / MySQL</p>
+                        <p>1 Year of experience</p>
+                    </div>
+
+                    <div class="skils-card-body">
+                        <p></p>
+                    </div>
+                </div>
+
+                <div class="skils-card">
+                    <div class="skils-card-header">
+                        <p>HTML / CSS</p>
+                        <p>2 Year of experience</p>
+                    </div>
+
+                    <div class="skils-card-body">
+                        <p></p>
+                    </div>
+                </div>
+
+                <div class="skils-card">
+                    <div class="skils-card-header">
+                        <p>JavaScript</p>
+                        <p>1 Year of experience</p>
+                    </div>
+
+                    <div class="skils-card-body">
+                        <p></p>
+                    </div>
+                </div>
+            </div>
+            <!-- end of animated cards -->
+        </div>
+
+        <div class="box" style="background: linear-gradient(to top right, #6a85aa, #21446c);" id="experience">
+            <p>This part is under construction</p>
+            <p>Please Stand By!</p>
+        </div>
+
+        <div class="box" style="background: linear-gradient(to bottom right, #6a85aa, #21446c);" id="contact">
+            <div class="contact-header">
+                
+            </div>
+            
+            <div class="contact-footer">
+                <div class="contact">
+                    <p>CONTACT DETAILS</p>
+                    <p>P: +40741923379</p>
+                    <p>M: pogareduard@yahoo.com</p>
+                    <p>A: Everyday</p>
+                </div>
+
+                <div class="faq">
+                    <p>USEFUL LINKS</p>
+                </div>
+
+                <div class="newsletter">
+                    <p>NEWSLETTER</p>
+                    <input type="text" placeholder="Name / Username">
+                    <input type="text" placeholder="Email">
+                    <button class="btn">SUBSCRIBE</button>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
+
+<script src="./JavaScript/functions.js"></script>

@@ -1,0 +1,72 @@
+:root {
+    --lightcolor: #ffd27d;
+    --color: #FFB52A;
+    --mysql: #00427e;
+    --php: #777bb3;
+    --js: #f8981d;
+    --ci: #5bc2f0;
+}
+
+.self-panel {
+    width: 50%;
+    text-align: center;
+    margin-top: 100px;
+}
+
+.web-title {
+    font-size: 60px;
+    color: var(--color);
+    font-weight: bold;
+    text-align: center;
+    overflow: hidden;
+    white-space: nowrap;
+    margin: 0 auto;
+    max-width: 765px;
+    animation: animate-text 2.5s steps(28),
+               animate-border 0.5s step-end infinite alternate;
+    border-right: 5px solid #ffffff;
+}
+
+.self-button {
+    background-color: var(--color);
+    outline: none;
+    border: none;
+    padding: 2%;
+    border-radius: 5px;
+    color: #ffffff;
+    font-size: 40px;
+}
+
+.self-button:hover {
+    cursor: pointer;
+}
+
+.web-title-description {
+    padding: 0 10%;
+    font-size: 25px;
+    margin-top: 20px;
+    text-align: center;
+}
+
+.self-buttons {
+    display: flex;
+}
+
+@keyframes animate-text {
+    from {
+        width: 0;
+    }
+
+    to {
+        width: 765px;
+    }
+}
+
+@keyframes animate-border {
+    50% { border-color: transparent;}
+}
+
+
+
+
+
